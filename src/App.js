@@ -6,7 +6,7 @@ import Switch from './components/Switch';
 function App() {
   return (
     <div className="App">
-      {/* <Madlibs /> */}
+      <Madlibs />
       <Counter />
       <Switch />
       <Switch />

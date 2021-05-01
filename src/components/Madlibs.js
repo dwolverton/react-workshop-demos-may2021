@@ -1,4 +1,7 @@
+import { useState } from "react";
+
 function Madlibs() {
+  const [ adj, setAdj ] = useState("");
 
   return (
     <div className="Madlibs">
@@ -7,6 +10,8 @@ function Madlibs() {
           <label htmlFor="Madlibs__adj">Adj: </label>
           <input
             id="Madlibs__adj"
+            value={adj}
+            onChange={(e) => setAdj(e.target.value)}
           />
         </p>
         <p>
@@ -22,7 +27,7 @@ function Madlibs() {
       <div className="Madlibs__story">
         <h3>Story</h3>
         <p>
-          I ordered the ___ fish, but all I got was this outrageous ___!
+          I ordered the {adj} fish, but all I got was this outrageous ___!
         </p>
       </div>
     </div>
