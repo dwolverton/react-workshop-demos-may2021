@@ -4,13 +4,13 @@ function Madlibs() {
     <div className="Madlibs">
       <form>
         <p>
-          <label for="Madlibs__adj">Adj: </label>
+          <label htmlFor="Madlibs__adj">Adj: </label>
           <input
             id="Madlibs__adj"
           />
         </p>
         <p>
-          <label for="Madlibs__noun">Noun: </label>
+          <label htmlFor="Madlibs__noun">Noun: </label>
           <input
             id="Madlibs__noun"
           />
