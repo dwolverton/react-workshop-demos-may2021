@@ -2,10 +2,17 @@ import { useState } from "react";
 
 function Madlibs() {
   const [ adj, setAdj ] = useState("");
+  // TODO Add a state for the noun as well.
+
+  function handleSubmit(e) {
+    e.preventDefault();
+    // TODO The story div should initially not show, but submitting
+    // the form shows the story.
+  }
 
   return (
     <div className="Madlibs">
-      <form>
+      <form onSubmit={handleSubmit}>
         <p>
           <label htmlFor="Madlibs__adj">Adj: </label>
           <input
