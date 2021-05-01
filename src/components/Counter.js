@@ -2,7 +2,7 @@ import { useState } from 'react';
 import './Counter.css';
 
 function Counter() {
-  const [ count, setCount ] = useState(5);
+  const [ count, setCount ] = useState(0);
 
   function resetCount() {
     setCount(0);
