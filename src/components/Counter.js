@@ -17,7 +17,7 @@ function Counter() {
       <p>{count}</p>
       <p>
         <button type="button" onClick={() => setCount(prevCount => prevCount - 1)}>Down</button>
-        <button type="button" onClick={resetCount}>Reset</button>
+        {count !== 0 && <button type="button" onClick={resetCount}>Reset</button>}
         <button type="button" onClick={countUp}>Up</button>
       </p>
     </div>
