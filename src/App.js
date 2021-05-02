@@ -3,6 +3,7 @@ import Counter from './components/Counter';
 import FakeWeatherList from './components/FakeWeatherList';
 import Madlibs from './components/Madlibs';
 import Quote from './components/Quote';
+import QuoteList from './components/QuoteList';
 import RealWeatherList from './components/RealWeatherList';
 import Switch from './components/Switch';
 import Weather from './components/Weather';
@@ -14,6 +15,7 @@ function App() {
   return (
     <div className="App">
       {/* <FakeWeatherList /> */}
+      <QuoteList />
       <RealWeatherList />
       <hr/>
       {/* Pass in values of props like HTML attributes */}
