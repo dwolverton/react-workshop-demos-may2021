@@ -1,6 +1,9 @@
 import './Weather.css';
 
+// props come in as an object parameter,
+// which we destructure to get the individual props.
 function Weather({time, conditions, tempF}) {
+  // I like to do more complex JavaScript work before the return JSX.
   const tempC = Math.round( (tempF - 32) * 5 / 9 );
 
   return (
