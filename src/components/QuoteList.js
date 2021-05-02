@@ -17,14 +17,17 @@ function QuoteList() {
     });
   }, []);
 
+  // grab an array of the first 10 quotes
+  let quotesToDisplay = quotes.slice(0, 10);
+
   return (
     <section>
       <h2>Quotes</h2>
       {/* in map, select the properties from the JSON to use */}
-      {quotes.map( (quote, index) => 
+      {quotesToDisplay.map( (quote, index) => 
         <Quote key={index}
-                  author={quote.author}
-                  text={quote.text} />)}
+                author={quote.author}
+                text={quote.text} />)}
     </section>
   )
 }
